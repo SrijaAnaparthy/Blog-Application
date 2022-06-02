@@ -15,7 +15,7 @@ const userdetailsSlice=createSlice({
 export function getUsers()
 {
     return(dispatch)=>{
-        fetch('https://chandrika-blog-application.herokuapp.com//data')
+        fetch('https://chandrika-blog-app-backend.herokuapp.com/data')
         .then(res=>res.json())
         .then(data=>dispatch(loadUsers(data)))
     }
@@ -25,7 +25,7 @@ export function addUser(newuser)
 {
     console.log('newuser',newuser)
     return(dispatch)=>{
-        fetch('https://chandrika-blog-application.herokuapp.com//adduser',{
+        fetch('https://chandrika-blog-app-backend.herokuapp.com/adduser',{
             method:'POST',
             body:JSON.stringify(newuser),
             headers: {

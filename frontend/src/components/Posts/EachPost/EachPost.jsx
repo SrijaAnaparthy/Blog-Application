@@ -17,7 +17,7 @@ export default function EachPost(props)
                 <h5 class="card-title" style={{color:'#2b6777'}}>{props.post.title}</h5>
                 <h6 class="card-text" style={{color:'#52ab98'}}>{props.post.content}</h6>
             </div>
-            <img class="card-img-bottom" src={props.post.postimagesrc} alt="Card image cap" style={{width:'580px'}}></img>
+            <img class="card-img-bottom" src={`https://chandrika-blog-app-backend.herokuapp.com/${props.post.postimagesrc}`} alt="Card image cap" style={{width:'580px'}}></img>
             <div className="d-flex mt-3">
                  <i class="bi bi-hand-thumbs-up-fill success" style={{color:'green'}} onClick={()=>{props.likesinc(props.postindex)}}></i>
                  <span className="me-5">{props.post.likescount}</span>

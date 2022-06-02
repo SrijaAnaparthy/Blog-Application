@@ -7,7 +7,7 @@ export default function EachAd(props)
             <div className="card mb-3 me-3" style={{width:'22x0px'}}>
             <div>
                 <div>
-                <img src={props.ad.adimagesrc} class="img-fluid rounded-start" alt="..." style={{width:'200px',height:'150px'}}></img>
+                <img src={`https://chandrika-blog-app-backend.herokuapp.com/${props.ad.adimagesrc}`} class="img-fluid rounded-start" alt="..." style={{width:'200px',height:'150px'}}></img>
                 </div>
                 <div>
                 <div className="card-body">

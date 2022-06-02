@@ -15,7 +15,7 @@ const adSlice=createSlice({
 export function getads()
 {
     return(dispatch)=>{
-        fetch('https://chandrika-blog-application.herokuapp.com/getads')
+        fetch('https://chandrika-blog-app-backend.herokuapp.com/getads')
         .then(res=>res.json())
         .then(data=>dispatch(loadAds(data)))
     }
@@ -24,7 +24,7 @@ export function addad(newad)
 {
     console.log('newad')
     return(dispatch)=>{
-        fetch('https://chandrika-blog-application.herokuapp.com/addad',{
+        fetch('https://chandrika-blog-app-backend.herokuapp.com/addad',{
             method:'POST',
             body:newad
         })

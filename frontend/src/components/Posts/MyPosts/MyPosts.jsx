@@ -34,7 +34,7 @@ export default function MyPosts()
                             </div>
                                 <p class="card-text">{post.content}</p>
                             </div>
-                            <img class="card-img-bottom" src={post.postimagesrc} alt="Card image cap" style={{width:'580px'}}></img>
+                            <img class="card-img-bottom" src={`https://chandrika-blog-app-backend.herokuapp.com/${post.postimagesrc}`} alt="Card image cap" style={{width:'580px'}}></img>
                             <div className="d-flex mt-3">
                                 <i class="bi bi-hand-thumbs-up-fill success" style={{color:'green'}} ></i>
                                 <span className="me-5">{post.likescount}</span>

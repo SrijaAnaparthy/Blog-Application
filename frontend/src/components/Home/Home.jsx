@@ -27,10 +27,10 @@ export default function Home()
         })
         if(flag==1)
         {
-        window.location.href=`http://localhost:3000/user/${u}`
+        window.location.href=`https://chandrika-blog-application.herokuapp.com/user/${u}`
         }
         else{
-            window.location.href="http://localhost:3000/home"
+            window.location.href="https://chandrika-blog-application.herokuapp.com/home"
         }
     }
     return(

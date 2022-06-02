@@ -16,7 +16,7 @@ const postsSlice=createSlice({
 export function getPosts()
 {
     return(dispatch)=>{
-        fetch('https://chandrika-blog-application.herokuapp.com/getposts')
+        fetch('https://chandrika-blog-app-backend.herokuapp.com/getposts')
         .then(res=>res.json())
         .then(data=>dispatch(loadPosts(data)))
     }
@@ -26,7 +26,7 @@ export function addPost(newPost)
 {
     console.log(newPost);
     return(dispatch)=>{
-    fetch('https://chandrika-blog-application.herokuapp.com/addpost',{
+    fetch('https://chandrika-blog-app-backend.herokuapp.com/addpost',{
       method:'POST',
       body:newPost,
     })
@@ -38,7 +38,7 @@ export function deletepost(id)
 {
     console.log(id);
     return(dispatch)=>{
-        fetch(`https://chandrika-blog-application.herokuapp.com/deletepost/${id}`,{
+        fetch(`https://chandrika-blog-app-backend.herokuapp.com/deletepost/${id}`,{
             method:'DELETE'
         }).then(()=>dispatch(getPosts()))
     }
@@ -47,7 +47,7 @@ export function putpost(ob)
 {
      console.log('ob',ob);
      return(dispatch)=>{
-         fetch("https://chandrika-blog-application.herokuapp.com/putpost",{
+         fetch("https://chandrika-blog-app-backend.herokuapp.com/putpost",{
         method:'PUT',
         body:JSON.stringify(ob),
         headers: {

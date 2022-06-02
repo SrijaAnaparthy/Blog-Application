@@ -34,7 +34,7 @@ export default function AddAd()
         formData.append('price',values.price);
         formData.append('user',localStorage.getItem('user'));
         dispatch(addad(formData));
-        window.location.href="http://localhost:3000/home"
+        window.location.href="https://chandrika-blog-application.herokuapp.com/home"
 
     }
     return(

@@ -34,7 +34,7 @@ export default function AddPost()
         formData.append('user',localStorage.getItem('user'))
         console.log(formData);
         dispatch(addPost(formData));
-        window.location.href="http://localhost:3000/home"
+        window.location.href="https://chandrika-blog-application.herokuapp.com/home"
     }
     return(
         <div>

@@ -102,7 +102,7 @@ app.post("/addpost",upload.single('file'),function(req,res)
             user:req.body.user,
             title:req.body.title,
             content:req.body.content,
-            postimagesrc:'http://localhost:3600/'+req.file.filename,
+            postimagesrc:req.file.filename,
             likescount:0,
             dislikesCount:0,
             comments:[],
