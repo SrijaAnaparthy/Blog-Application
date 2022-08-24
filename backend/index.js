@@ -91,7 +91,7 @@ var upload = multer({
 app.get("/",function(req,res)
 {
      res.send("HElLLO backend is working fine with no issues"); 
-}
+})
 
 app.post("/addpost",upload.single('file'),function(req,res)
 {
