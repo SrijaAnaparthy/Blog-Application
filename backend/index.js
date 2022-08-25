@@ -185,5 +185,5 @@ app.post('/addad',upload.single('file'),function(req,res)
     })
     }
 })
-app.listen(process.env.PORT || 3200,function(){console.log('server running on 3600')});
+app.listen(process.env.PORT || 3200,function(){console.log('server running on 3200')});
 // app.listen(3600,function(){console.log('server running on 3600')})
